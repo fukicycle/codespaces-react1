@@ -36,6 +36,9 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 19.4
+      - name: Add gh-pages
+        run: |
+          yarn add gh-pages
       - name: Install Dependencies
         run: |
           yarn install
